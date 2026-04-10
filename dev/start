@@ -4,4 +4,4 @@ set -a
 . .env
 set +a
 
-go run src/main.go
+go run ./src

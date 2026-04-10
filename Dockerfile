@@ -15,7 +15,7 @@ RUN go mod download
 COPY . .
 
 ARG VERSION=0.1
-RUN go build -ldflags="-X 'main.Version=$VERSION'" -o bin/xmtpd-gateway src/main.go
+RUN go build -ldflags="-X 'main.Version=$VERSION'" -o bin/xmtpd-gateway ./src
 
 # ACTUAL IMAGE -------------------------------------------------------
 
